@@ -14,7 +14,7 @@ public:
     
     void checkOut(int id, string stationName, int t) {
         auto checkIn = checkInM[id];
-        checkInM.erase(id);
+       // checkInM.erase(id);
         
         string pathName = checkIn.first + "_" + stationName;
         path[pathName].first += t - checkIn.second;
