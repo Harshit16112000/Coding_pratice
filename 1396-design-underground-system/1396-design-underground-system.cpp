@@ -23,7 +23,7 @@ public:
     
     double getAverageTime(string startStation, string endStation) {
         string routeName = startStation + "_" + endStation;
-        auto& route = path[routeName];
+        auto route = path[routeName];
         
         return (double) route.first/route.second;
     }
